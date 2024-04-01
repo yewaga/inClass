@@ -1,0 +1,2 @@
+# inClass
+classTraits
