@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <style>
+        input {
+            font-family: "Sofia", sans-serif;
+            border-style: inset;
+        }
+
+        label {
+            font-family: "Trirong", serif;
+        }
+
+        h2 {
+            font-family: "Audiowide", sans-serif;
+        }
+    </style>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <div>
+        <form action="" method="get" name="myForm"
+            style="border-style: ridge;box-shadow: 3px 5px 8px #888888;border-radius: 7px; width: 50%; border: outset 2px dashed #777; margin: auto; padding: 10px; background-color: #bbb;">
+            <fieldset style="border-style: ;">
+                <legend style="border-style: unset;;">
+                    <fieldset disabled="disabled">
+                        <h2 align="center">Form Elements Testing</h2>
+                    </fieldset>
+                </legend>
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="idname" value="Yew"><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname" value="Aga"><br>
+                <label for="iMobile">Mobile:</label><br>
+                <input type="text" id="iMobile" name="iAddress" value="09XX XXX XXX" size="15" maxlength="10"
+                    minlength="10">
+                <br>
+                <label for="iAddress">Address:</label><br>
+                <input type="text" id="iAddress" name="iAddress" value="Tarzan County" size="50"><br>
+                <hr>
+                <!-- 多選 -->
+                <label for="favbooks">Choose favorite Books you like:</label><br>
+                <input type="checkbox" id="vehicle1" name="fav-vehicle" value="Bike">
+                <label for="vehicle1"> White Noise
+                    <span style="font-size: 12px;">by Don DeLillo</span></label><br>
+                <input type="checkbox" id="vehicle2" name="fav-vehicle" value="Car">
+                <label for="vehicle2"> American Psycho
+                    <span style="font-size: 12px;"></span>byBret Easton Ellis</span></label><br>
+                <input type="checkbox" id="vehicle3" name="fav-vehicle" value="Boat">
+                <label for="vehicle3"> A Little Life
+                    <Hanya style="font-size: 12px;">by Hanya Yanagihara</span>
+                </label><br>
+                <input type="checkbox" id="vehicle4" name="fav-vehicle" value="Rocket">
+                <label for="vehicle4"> Americanah
+                    <span style="font-size: 12px;">by Chimamanda Ngozi Adichie</span></label><br>
+                <hr>
+                <!-- 單選 -->
+                <label for="ovehicle1">Choose a vehicle you own:</label><br>
+                <input type="radio" id="ovehicle1" name="fav-vehicle" value="Bike">
+                <label for="ovehicle1"> I have a bike</label><br>
+                <input type="radio" id="ovehicle2" name="fav-vehicle" value="Car">
+                <label for="ovehicle2"> I have a car</label><br>
+                <input type="radio" id="ovehicle3" name="fav-vehicle" value="Boat">
+                <label for="ovehicle3"> I have a boat</label><br>
+                <input type="radio" id="ovehicle4" name="fav-vehicle" value="Rocket">
+                <label for="ovehicle4"> I have a rocket</label><br>
+
+
+                <label for="ovehicle1"></label><input type="radio" name="fav-vehicle" value=""><label
+                    for="ovehicle2"></label><input type="radio" name="fav-vehicle" value=""><label
+                    for="ovehicle3"></label><input type="radio" name="fav-vehicle" value=""><label
+                    for="ovehicle4"></label><input type="radio" name="fav-vehicle" value=""><label
+                    for="ovehicle5"></label><input type="radio" name="fav-vehicle" value=""> <!-- 下拉選單 -->
+                <hr>
+                <label for="cars">Choose a car-brand:</label>
+                <select id="cars" name="carlist" form="myForm">
+                    <option value="suzuki">Suzuki</option>
+                    <option value="volvo">Volvo</option>
+                    <option value="saab">Saab</option>
+                    <option value="opel">Opel</option>
+                    <option value="audi">Audi</option>
+                </select>
+                <br>
+                <hr>
+                <input type="submit" value="Click Me"
+                    style="border-style:ridge; font-family: Verdana, Geneva, Tahoma, sans-serif;">
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>

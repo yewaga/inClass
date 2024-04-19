@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form {
+            margin: auto;
+            width: 50%;
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 無語意的block -->
+    <div class="container">
+        <form action="" method="get">
+            <fieldset>
+                <legend>hr fieldset</legend>
+                <!-- label跟input為一組，for跟id一樣 -->
+                <p>
+                    <label for="name">First name:</label>
+                    <input type="text" id="name" name="fname">
+                </p>
+                <p>
+                    <label for="mobile">mobile:</label>
+                    <input type="text" id="mobile" name="">
+                </p>
+                <p>
+                    <label for="price">price:</label>
+                    <input type="text" id="price" name="">
+                </p>
+                <p>
+                    <label for="address">address:</label>
+                    <input type="text" id="address" name="">
+                </p>
+                <input type="submit" value="Submit">
+
+                <!-- input: text -->
+                <!-- input: number -->
+
+                <hr>
+
+                <!-- input: text => select 下拉式選單 -->
+                <select name="" id="mySelect">
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                </select>
+
+                <hr>
+                <!-- radio 單選-->
+                最喜歡的書
+
+                <input type="radio" name="book" id="" value="糖果屋">
+                <label for="">糖果屋</label>
+                <input type="radio" name="book" id="" value="思考致富">
+                <label for="">思考致富</label>
+                <input type="radio" name="book" id="" value="偷書賊">
+                <label for="">偷書賊</label>
+
+                <hr>
+
+                <!-- checkbox 多選-->
+                喜歡的程式語言
+
+                <input type="checkbox" name="love[]" id="" value="html/css">
+                <label for="">html/css</label>
+                <input type="checkbox" name="love[]" id="" value="js">
+                <label for="">js</label>
+                <input type="checkbox" name="love[]" id="" value="php">
+                <label for="">php</label>
+                <hr>
+                <label for="date">date</label>
+                <input type="date" name="" id="" value="2024-04-02">
+                <hr>
+                <!-- textarea 多行文字  -->
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+            </fieldset>
+        </form>
+        <a href="./index.html">回首頁</a>
+    </div>
+
+</body>
+
+</html>

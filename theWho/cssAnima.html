@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animation</title>
+    <style>
+        #div1 {
+            width: 300px;
+            height: 300px;
+            background: gray;
+            transition: width 1s, background 2s;
+        }
+
+        #div1:hover {
+            width: 500px;
+            background: red;
+        }
+
+        #container {
+            display: inline-block;
+            position: relative;
+            margin: auto;
+            width: 1000px;
+            height: 600px;
+            left: 0px;
+            background: rgb(49, 116, 117);
+            background: linear-gradient(180deg, rgb(76, 220, 223) 0%, rgba(43, 36, 21, 1) 100%);
+        }
+
+        #container div {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-image: url(https://i.pinimg.com/originals/fa/d2/25/fad225214130494f40d2c8f22166aab4.gif);
+            left: 20%;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        #container:hover div {
+            left: calc(100% - 100px);
+        }
+
+        #ease {
+            transition: left 5s ease;
+            animation: move 3s infinite step-start;
+
+        }
+
+        #linear {
+            right: 300px;
+            top: 100px;
+            transition: left 5s linear;
+            animation: move 5s linear infinite;
+        }
+
+        #ease-in {
+            top: 200px;
+            transition: left 5s ease-in;
+            animation: move 5s ease-in infinite;
+
+        }
+
+        #ease-out {
+            top: 300px;
+            transition: left 5s ease-out;
+            transform: scaleX(-1);
+            background-image: url();
+            animation: move 5s ease-out reverse infinite;
+        }
+
+        #ease-in-out {
+            top: 400px;
+            transition: left 5s ease-in-out;
+        }
+
+        #cubic-bezier {
+            top: 500px;
+            transition: left 5s cubic-bezier(1, -0.94, .12, 1.97);
+            animation: move 5s cubic-bezier(1, -0.94, .12, 1.97) infinite;
+            transform: scaleX(-1);
+            animation: move 5s ease-out reverse infinite;
+        }
+
+        /* #hello::after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 3px;
+            background: black;
+        } */
+
+        .nav {
+            font-size: 3em;
+            background: rgb(206, 206, 11);
+            display: inline-block;
+            margin-right: 10px;
+            box-shadow: 6px 6px 7px black;
+        }
+
+        .nav::after {
+            content: "";
+            display: block;
+            width: 0%;
+            height: 6px;
+            background: black;
+            transition: width .5s;
+            margin: auto;
+            box-shadow: 6px 6px 7px black;
+            animation: move 5s ease-out reverse infinite;
+
+        }
+
+        .nav:hover::after {
+            width: 100%
+                /* //left 5s cubic-bezier(1, -0.94, .12, 1.97); */
+        }
+
+        .ani {
+            width: 100px;
+            height: 100px;
+            position: relative;
+            background: gray;
+            animation: move 5s;
+        }
+
+        @keyframes move {
+            0% {
+                left: 0px;
+                transform: scaleX(0.1);
+
+            }
+
+            50% {
+                left 100%;
+                transform: scaleX(2.0);
+            }
+
+
+            75% {
+                left 100%;
+                transform: scaleX(-1);
+            }
+
+            100% {
+                left: 500px;
+            }
+        }
+
+        #jpContainer {
+            position: relative;
+            display: inline-block;
+            background: rgb(255, 255, 255);
+            width: 220px;
+            height: 1000px;
+            border: 5px solid;
+        }
+
+        #jp {
+            display: inline-block;
+            margin: auto;
+            background-image: url(/image/m2K9A0m2N4d3H7b1.png);
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            left: 0%;
+            bottom: 80%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            animation: jump 0.8s infinite alternate-reverse cubic-bezier(.75, .14, .38, .98);
+            animation: name duration timing-function delay iteration-count direction fill-mode;
+        }
+
+        @keyframes jump {
+            0% {
+                top: 0%;
+                left: 0%;
+            }
+
+            50% {
+                30%;
+            }
+
+            100% {
+                bottom: 0%;
+                left: calc(100% - 100px);
+                transform: scaley(0.7);
+                transform: scalex(1.2)
+            }
+        }
+
+        #jpcontainer:hover::
+    </style>
+</head>
+
+<body>
+    <h1 class="nav">HOME</h1>
+    <h1 class="nav">ABOUT</h1>
+    <h1 class="nav">CONTACT</h1>
+    <div id="container">
+        <div id="ease"></div>
+        <div id="linear"></div>
+        <div id="ease-in"></div>
+        <div id="ease-out"></div>
+        <div id="ease-in-out"></div>
+        <div id="cubic-bezier"></div>
+    </div>
+    <div id="jpContainer">
+        <div id="jp"></div>
+    </div>
+</body>
+
+</html>
