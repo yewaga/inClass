@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" saturate="width=device-width, initial-scale=1.0"> -->
+    <title>divFrontPage</title>
+    <style>
+        body {
+            margin: auto;
+            width: 90%;
+        }
+
+
+        .wdaLogo {
+            width: 3rem;
+            height: 3rem;
+            margin: 0.5rem;
+        }
+
+        .pageTitle {
+            text-align: center;
+            width: 10rem;
+            margin: auto;
+            margin-top: 10rem;
+        }
+
+
+        .upMenu {
+            float: right;
+            width: 5rem;
+            margin: 5px;
+            text-align: center;
+            height: 3rem;
+            line-height: 3rem;
+            color: aliceblue;
+            transition: transform 0.5s;
+
+        }
+
+        .upMenu:hover {
+            transform: scale(1.3);
+        }
+
+
+
+        .row0 {
+            height: 4rem;
+            background-color: black;
+        }
+
+        .row1 {
+            height: 25rem;
+            background-image: url(./image/tarzan.JPG);
+            background-repeat: no-repeat;
+            background-size: cover;
+            filter: grayscale(100%) invert(100%);
+            filter: invert(100%);
+            background-position: center;
+            animation-name: tbg;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+
+        /* .tarzan {
+            margin-top: 0px;
+            color: aliceblue;
+            line-height: 35rem;
+            height: 35rem;
+            text-align: center;
+        } */
+
+        .row2 {
+            /* width: 90%; */
+            height: 200px;
+            clear: both;
+        }
+
+        .row2>* {
+            margin: auto;
+            text-align: center;
+        }
+
+        .feature {
+            width: 150px;
+            height: 5rem;
+            line-height: 5rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            font-size: 1.7em;
+        }
+
+        .row2>p {
+            font-size: 1em;
+            font-family: 標楷體;
+            margin: 1rem;
+            margin-left: 3rem;
+            margin-right: 3rem;
+        }
+
+        @keyframes tbg {
+            0% {
+                filter: grayscale(100%);
+                /* filter: saturate(100%); */
+            }
+
+            35% {
+                filter: grayscale(100%);
+                /* filter: saturate(100%); */
+            }
+
+            50% {
+                filter: grayscale(0%);
+                /* filter: saturate(150%); */
+            }
+
+            65% {
+                filter: grayscale(100%);
+                /* filter: saturate(100%); */
+            }
+
+            100% {
+                filter: grayscale(100%);
+                /* filter: saturate(100%); */
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="row0"> <a href="https://tkyhkm.wda.gov.tw/cp.aspx?n=C1AB93E4838E85E3"><img class="wdaLogo"
+                src="./image/wdalogo.webp" width="150px" height="150px"></a>
+        <div class="upMenu upMenu1">其他 </div>
+        <div class="upMenu upMenu2">下載專區</div>
+        <div class="upMenu upMenu3">業務專區</div>
+        <div class="upMenu upMenu4">為民服務</div>
+        <div class="upMenu upMenu5">分屬簡介</div>
+        <div class="upMenu upMenu6">訊息中心</div>
+    </div>
+    <div class="row1">
+        <!-- <h1 class="tarzan">泰山訓練場泰山訓練場</h1> -->
+    </div>
+    <div class="row2">
+        <h3 class="feature">Features</h3>
+        <p>本分署以「專業、熱誠、創新、感動」為服務民眾理念，致力於職業訓練、技能檢定、就業服務、創業輔導四大任務；因應經濟環境與人力需求的轉變，我們的同仁，秉持「學習型組織的精神」、「務實、解決問題」、「相信自己、相信團隊」的核心價值，在現有的基礎上持續提升內外部人才發展品質，致力整合區域資源，發揮區域運籌角色，永續發展、精益求精。
+        </p>
+    </div>
+</body>
+
+</html>
