@@ -83,7 +83,7 @@ div > .container{
         $lt=abs($mask/2-$i)+1; //get the left-distance from mid-diamond to print stars
         $rt=$mask-abs($mask-($mask/2+$i)); //get the right-distance from mid-diamond to print stars
         for($j=0;$j<$mask;$j++){ // j dominates numbers of stars
-           if($){f(){
+           if($i==0 || $i==$mask}}){f(){
              if($j>=$lt && $j<$rt){ // j restricted to lt&rt to print stars
 
            }else{
