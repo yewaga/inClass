@@ -9,7 +9,7 @@
         body {
             width: 80%;
             /* height: 80%; */
-            background-color: yellowgreen;
+            /* background-color: yellowgreen; */
             border: solid 10px orange;
             margin: auto;
             margin-left: 50px;
@@ -24,18 +24,24 @@
         }
 
         .calWeek {
-            width: 100%;
+            width: 90%;
+            height: 3.5rem;
             clear: both;
+            background-color: rgb(102, 0, 51);
+            border: solid 1px black;
+            margin: auto;
+            text-align: center;
         }
 
         .calDay {
-            width: 3.5rem;
+            width: 10%;
             height: 3rem;
             line-height: 3rem;
             text-align: center;
             float: left;
             background-color: #5f9ea0;
             color: white;
+            margin: 3px;
         }
     </style>
 </head>
@@ -53,7 +59,6 @@
             <div class="calDay"><b>Fri</b></div>
             <div class="calDay"><b>Sat</b></div>
         </div>
-        <br>
         <?php
         $now = strtotime($_GET['inputDate']); //get the date 
         $realdays = date('t', $now); //get the days of month from inputDate(form)
